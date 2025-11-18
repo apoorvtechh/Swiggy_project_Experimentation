@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/datascience/campusx/PROJECTS/Swiggy_project_Experimentation/mlruns/866472804835100338/c6af5f86b76d46d2b2a33cd157cabd5b/artifacts
+end_time: 1763449490777
+entry_point_name: ''
+experiment_id: '866472804835100338'
+lifecycle_stage: active
+run_id: c6af5f86b76d46d2b2a33cd157cabd5b
+run_name: SVR - Dropped Missing Values
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763449490531
+status: 3
+tags: []
+user_id: apoor
