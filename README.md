@@ -48,7 +48,7 @@ Multiple machine learning algorithms were trained and compared:
 - **LightGBM**  
 - **CatBoost**  
 - **SVM**  
-- **KNN**  
+- **XGB**  
 - **Random Forest**  
 
 Each model was evaluated on:
