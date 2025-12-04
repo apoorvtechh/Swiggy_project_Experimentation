@@ -1,74 +1,81 @@
 # 🛵 Swiggy Delivery Time Prediction – Experimentation
 
-This repository contains all experimentation work for building a **delivery time (ETA) prediction system** inspired by real food-delivery platforms like Swiggy and Zomato.
+This repository contains all experimentation and research work for building a **delivery time (ETA) prediction system**, inspired by real food-delivery platforms like **Swiggy** and **Zomato**.
 
-The goal of this phase is to explore the dataset, engineer meaningful features, experiment with multiple ML models, and choose the best-performing approach for production deployment.
+The purpose of this repo is to perform **data cleaning, feature engineering, EDA, model training**, and evaluate multiple machine learning approaches before deploying the final model in production.
 
 ---
 
 ## 🚀 Project Overview
 
-The project aims to predict how long a delivery will take based on:
+The goal of this project is to predict **how long a food order will take to be delivered**, based on:
 
 - Delivery partner information  
 - Restaurant & customer locations  
 - Order timestamps  
-- Weather and traffic conditions  
+- Weather & traffic conditions  
 - Order type and vehicle type  
 
-This repo includes **all experimentation notebooks** used before integrating the final model into the production API.
+This repository includes **all Jupyter notebooks and experimentation code** used before selecting and deploying the final production model.
 
 ---
 
 ## 🧹 Data Preprocessing & Cleaning
 
+Key preprocessing steps include:
+
 - Handling missing or inconsistent values  
-- Normalizing time formats (Order time, Pickup time, etc.)  
-- Creating new features (e.g., Haversine distance)  
-- Encoding categorical features  
-- Scaling numerical variables  
+- Converting and normalizing timestamps  
+- Engineering new features such as **Haversine distance**  
+- Encoding all categorical variables  
+- Scaling numerical features  
+- Detecting invalid or abnormal entries (coordinates, ratings, age, etc.)  
 
 ---
 
 ## 📊 Exploratory Data Analysis (EDA)
 
+Extensive EDA was performed to understand real-world delivery patterns:
+
 - Delivery partner performance trends  
 - Traffic density vs delivery time  
-- Weather impact analysis  
-- City-wise comparisons  
-- Feature correlation heatmaps  
-- Understanding distribution of target variable  
+- Weather impact on ETA  
+- City-wise performance analysis  
+- Correlation between features  
+- Target variable distribution analysis  
+- Missing data visualization & patterns  
+
+These insights helped guide feature engineering and model selection.
 
 ---
 
 ## 🧪 Model Experimentation
 
-Multiple machine learning algorithms were trained and compared:
+Multiple ML algorithms were trained and compared, including:
 
 - **LightGBM**  
 - **CatBoost**  
-- **SVM**  
-- **XGB**  
-- **Random Forest**  
+- **Support Vector Machine (SVM)**  
+- **XGBoost Regressor**  
+- **Random Forest Regressor**  
 
-Each model was evaluated on:
+All models were evaluated based on:
 
-- MAE, RMSE  
-- R² Score  
-- Training vs. inference speed  
-- Stability and generalization  
+- **MAE (Mean Absolute Error)**  
+- **RMSE (Root Mean Squared Error)**  
+- **R² Score**  
+
+The best-performing models (LightGBM + CatBoost) were later fine-tuned and used in the **production ensemble model**.
 
 ---
 
-## 🎯 Hyperparameter Tuning
+## 🔗 Important Project Links
 
-Performed using:
- 
--  Optuna
-- Manual iterative tuning  
-- MLflow experiment tracking  
+### ✅ **Final Production Repository (FastAPI, Docker, AWS Auto Scaling Deployment)**  
+https://github.com/apoorvtechh/delivery_time_estimator  
 
-The best results came from a **weighted ensemble** of LightGBM + CatBoost.
+### 📝 **Project Synopsis (Detailed Write-up + Architecture Explanation)**  
+https://github.com/apoorvtechh/synopsis_eta  
 
 ---
 
