@@ -63,15 +63,12 @@ Each model was evaluated on:
 ## 🎯 Hyperparameter Tuning
 
 Performed using:
-
-- Grid Search  
-- Random Search  
+ 
+-  Optuna
 - Manual iterative tuning  
 - MLflow experiment tracking  
 
 The best results came from a **weighted ensemble** of LightGBM + CatBoost.
 
 ---
-
-## 📁 Repository Structure
 
