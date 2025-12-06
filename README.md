@@ -75,7 +75,7 @@ The best-performing models (LightGBM + CatBoost) were later fine-tuned and used 
 https://github.com/apoorvtechh/delivery_time_estimator  
 
 ### 📝 **Project Synopsis (Detailed Write-up + Architecture Explanation)**  
-https://github.com/apoorvtechh/synopsis_eta  
+https://apoorvtechh-synopsis-eta-main-6f3ijc.streamlit.app
 
 ---
 
