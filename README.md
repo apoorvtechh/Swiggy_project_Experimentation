@@ -1,4 +1,4 @@
-# 🛵 Swiggy Delivery Time Prediction – Experimentation
+# 🛵 Food Delivery Time Prediction – Experimentation
 
 This repository contains all experimentation and research work for building a **delivery time (ETA) prediction system**, inspired by real food-delivery platforms like **Swiggy** and **Zomato**.
 
